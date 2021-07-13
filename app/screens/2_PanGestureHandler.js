@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {StyleSheet, View, Text} from 'react-native';
+import {StyleSheet, View, Text, Button} from 'react-native';
 import Animated, {
   useAnimatedGestureHandler,
   useAnimatedStyle,
@@ -54,6 +54,15 @@ const Screen = () => {
           <Animated.View style={[styles.box, animatedStyle]}></Animated.View>
         </PanGestureHandler>
       </View>
+
+      <Text>{translateX.value}</Text>
+      <Button
+        title="Change value"
+        onPress={() => {
+          translateX.value = 1;
+          console.log(translateX.value);
+        }}
+      />
     </View>
   );
 };
