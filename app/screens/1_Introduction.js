@@ -20,9 +20,8 @@ const HomeScreen = () => {
         'worklet';
         return `${progress.value * 2 * Math.PI}rad`
     }
-}
-
-useEffect(() => {
+    
+    useEffect(() => {
     //progress.value = withTiming(0.5)
     progress.value = withSpring(0.5)
     //scale.value = withSpring(1)
@@ -38,6 +37,9 @@ return (
         }, reanimatedStyle]}></Animated.View>
     </View>
 )
+
+}
+
 
 
 const styles = StyleSheet.create({

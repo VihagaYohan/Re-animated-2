@@ -20,11 +20,12 @@ import {
 
 // screens
 import Introduction from './app/screens/1_Introduction'
+import PanGestureHandler from './app/screens/2_PanGestureHandler'
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <Introduction />
+      <PanGestureHandler />
     </SafeAreaView>
   );
 };
