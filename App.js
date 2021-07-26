@@ -23,11 +23,12 @@ import Introduction from './app/screens/1_Introduction'
 import PanGestureHandler from './app/screens/2_PanGestureHandler'
 import Reactiveness from './app/screens/3_Reactiveness'
 import DrivingAnimation from './app/screens/4_DrivingAnimation'
+import Interpolation from './app/screens/5_Interpolation'
 
 const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      <DrivingAnimation />
+      <Interpolation/>
     </SafeAreaView>
   );
 };
